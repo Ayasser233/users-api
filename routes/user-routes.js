@@ -4,10 +4,10 @@ const multer = require("multer");
 const appError = require("../utilis/apperror");
 
 const userscontroller = require("../controllers/users.controller");
-const verifytoken = require("../middlewares/verifytoken");
+
 const apperror = require("../utilis/apperror");
 
-router.route("/").get(verifytoken, userscontroller.getAllUsers);
+router.route("/").get( userscontroller.getAllUsers);
 
 router
   .route("/register")
