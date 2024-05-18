@@ -49,12 +49,12 @@ const register = asyncwrapper(async (req, res, next) => {
     email,
     password: hashedPassword,
     phoneNumber,
-    role,
+    
     
   });
   // Generate JWT Token
-  const token = await generateJWT({ email: newUser.email, id: newUser._id, role: newUser.role});
-  newUser.token = token;
+  // const token = await generateJWT({ email: newUser.email, id: newUser._id, role: newUser.role});
+  // newUser.token = token;
 
   await newUser.save({}, { __v: false });
   res.status(201).json({ status: httpStatusText.SUCCESS, data: { user: newUser } });
