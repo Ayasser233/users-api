@@ -1,7 +1,6 @@
 {
   "name": "session5-codezone",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "18.x"
@@ -18,9 +17,11 @@
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
     "express-validator": "^7.0.1",
+    "json": "^11.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.0",
     "multer": "^1.4.5-lts.1",
     "validator": "^13.11.0"
-  }
+  },
+  "description": ""
 }
